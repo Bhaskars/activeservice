@@ -31,10 +31,13 @@ class Person < Activeservice::Base
 end
 
 params = {"name" =>"testmeparams", "age" => "25", "books" =>["wewrwrwr", "werwrwrr"]}
+
 params1 = {:name =>"testmeparams", :age => "25", :books => {:author =>"my name", :category => "fiction"}}
 
 p = Person.new(params)
+
 p1 = Person.new(params1)
+
 puts p.attributes
 puts p.attributes.inspect
 
