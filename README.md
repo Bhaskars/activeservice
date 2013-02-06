@@ -22,12 +22,12 @@ Or install it yourself as:
 
 Example
 =======
-
 class Person < Activeservice::Base
-  attr_accessor :name, :age, :books
 
-  attr_reader :account_number
-  attr_writer :address
+    attr_accessor :name, :age, :books
+
+    attr_reader :account_number
+    attr_writer :address
 end
 
 params = {"name" =>"testmeparams", "age" => "25", "books" =>["wewrwrwr", "werwrwrr"]}
@@ -39,6 +39,7 @@ p = Person.new(params)
 p1 = Person.new(params1)
 
 puts p.attributes
+
 puts p.attributes.inspect
 
 TODO:
