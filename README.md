@@ -52,6 +52,7 @@ puts p.attributes.inspect
 #temp
 
 @book = Book.new
+
 @book.assign_attributes(p1.book)
 
 # with the association added, this should be automatic.
