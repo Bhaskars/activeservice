@@ -22,17 +22,24 @@ Or install it yourself as:
 
 Example
 =======
+
 class Person < Activeservice::Base
 
-    attr_accessor :name, :age, :books
+    attr_accessor :name, :age, :book
 
     attr_reader :account_number
     attr_writer :address
 end
 
-params = {"name" =>"testmeparams", "age" => "25", "books" =>["wewrwrwr", "werwrwrr"]}
+class Book < Activeservice::Base
 
-params1 = {:name =>"testmeparams", :age => "25", :books => {:author =>"my name", :category => "fiction"}}
+    attr_accessor :author, :category
+
+end
+
+params = {"name" =>"testmeparams", "age" => "25", "book" =>["wewrwrwr", "werwrwrr"]}
+
+params1 = {:name =>"testmeparams", :age => "25", :book => {:author =>"my name", :category => "fiction"}}
 
 p = Person.new(params)
 
@@ -42,11 +49,19 @@ puts p.attributes
 
 puts p.attributes.inspect
 
+#temp
+
+@book = Book.new
+@book.assign_attributes(p1.book)
+
+# with the association added, this should be automatic.
+
+
 TODO:
 
-* Association 
-* mass assignments should be added later....
-* 
+* Association, 
+* mass assignments should be added later.... 
+*
 
 ## Contributing
 
