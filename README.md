@@ -2,7 +2,7 @@
 
 
 This gem is created for projects which do not require a backend/database,
-but still need all the niceties offered by the ActiveModel
+but still need all the niceties offered by ActiveRecord.
 
 ## Installation
 
