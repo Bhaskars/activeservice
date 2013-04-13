@@ -9,9 +9,9 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Bhaskar Sundarraj"]
   gem.email         = ["bhaskar.sundarraj@gmail.com"]
   gem.description   = %q{This gem is created to cater the projects which do not require a backend/database,
-  but still need all the niceties offered by the ActiveModel}
+  but still need all the niceties offered by the ActiveRecord}
   gem.summary       = %q{This gem is created to cater the projects which do not require a backend/database,
-    but still need all the niceties offered by the ActiveModel}
+    but still need all the niceties offered by the ActiveRecord}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
